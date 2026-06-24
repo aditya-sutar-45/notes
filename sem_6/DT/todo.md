@@ -2,7 +2,7 @@
 
 ## use case on
 
-- [] empathy map
+- [x] empathy map
 - [x] prototypes
 - [x] kano model
 - [x] design activism
@@ -11,7 +11,7 @@
 
 ## diagrams for
 
-- [] empathy map
+- [x] empathy map
 - [x] design activism
 - [x] kano model
 - [x] agility in DT
@@ -57,3 +57,11 @@ types → low fidelity, mid fidelity, high fidelity
 low → paper
 mid → wireframe
 high → real shit
+
+## 5 Stages of DT
+
+> Empathize → define → ideate → prototype → test
+
+## Empathy Map
+
+> Says, thinks, Does, Feels

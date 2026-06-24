@@ -12,6 +12,8 @@ test the product on full scale, get feedback
 4. Improving Prototypes
 5. Redefining the problem
 
+> test → feedback → analyze → improve → redefine
+
 ### Key Factors of Testing phase
 
 ![Key factors](./img/key_factors_testing_phase.png)
