@@ -71,3 +71,70 @@ Common values
 - conditional layouts for phone, tablets, foldables
 - FlatList instead of ScrollView
 - Test UI and diff screens
+
+## Native Driver in React Native
+
+- runs animations on native UI thread instead of JS thread
+- enabled using:
+
+  ```jsx
+  useNativeDriver: true;
+  ```
+
+### How does it optimize animations?
+
+- moves animations: JS thread → native thread
+- reduces communication over React Native Bridge
+- animations continue even when JS thread is busy
+- decreases lag and stuttering
+
+### Why is it needed for 60FPS?
+
+- smooth UI
+- each frame has 16.67 ms to render
+- JS thread is busy with API calls → can cause lags
+
+| Native Driver             | JS Animations             |
+| ------------------------- | ------------------------- |
+| Runs on native UI thread  | Runs on JS thread         |
+| Independent of JS thread  | Depends on JS thread      |
+| Less bridge communication | More bridge communication |
+| Smoother animations       | Can become laggy          |
+| Better 60 FPS support     | More frame drops          |
+
+## Accessibilty in React Native for TalkBack / VoiceOver
+
+- TalkBack → Screen reader used for android
+- VoiceOver → Screen reader for IOS
+- gives audio feedback
+
+### Accessibilty options
+
+1. `accessible={true}` make component accessible
+2. `accessibiltyLabel` provide description for screen readers
+3. `accessbiltyHint` to explain what the action does
+4. `accessibiltyRole` to specific the element type
+5. `accessibilityState` to indicate states (disabled / selected)
+
+eg:
+
+```jsx
+<Button
+  title="Login"
+  accessible={true}
+  accessibilityLabel="Login Button"
+  accessibilityHint="Logs into your account"
+  accessibilityRole="button"
+/>
+```
+
+## FlatList vs ScrollView
+
+| ScrollView                     | FlatList                      |
+| ------------------------------ | ----------------------------- |
+| Renders all items at once.     | Renders only visible items.   |
+| Higher memory usage.           | Lower memory usage.           |
+| Slower for large datasets.     | Optimized for large datasets. |
+| No virtualization support.     | Uses virtualization.          |
+| Suitable for small lists.      | Suitable for large lists.     |
+| Can cause lag with many items. | Provides smooth scrolling.    |
