@@ -1,0 +1,1 @@
+# Obstacles and Framework Conditions

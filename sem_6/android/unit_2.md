@@ -150,3 +150,23 @@ const student: Student = {
 | Supports inheritance                | Uses intersection for composition |
 | Mainly used for object              | represents objects, unions, etc   |
 | Can be merged - declaration merging | Cannot be merged                  |
+
+## Javascript Event loop
+
+- JS → single threaded
+- one task at a time
+- heavy operations sent to Web APIs / Native APIs
+- when API response arrives, callback / promis is placed in the Callback queue
+- event loop check if call stack empty
+- if the call stack is empty
+- if empty moves the callback from queue to stack
+- this prevents UI from freezing
+
+## Compile time vs Runtime
+
+| Compile-time Errors            | Runtime Errors                        |
+| ------------------------------ | ------------------------------------- |
+| during compilation             | while the app is running              |
+| Prevent the app from building. | Cause crashes or unexpected behavior. |
+| Detected before execution.     | Detected during execution.            |
+| eg: Type mismatch in ts.       | eg: Accessing null variables          |
