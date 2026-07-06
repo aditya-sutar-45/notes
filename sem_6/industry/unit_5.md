@@ -10,6 +10,9 @@
 1. Tourism and Navigation
 1. Museums and Smart cities
 
+> [!NOTE]
+> I HEERT MC
+
 ## AR Technology
 
 - overlays digital information onto the real world environment
