@@ -15,6 +15,9 @@
 4. Implement
 5. Usabilty testing
 
+> [!NOTE]
+> 3D IU
+
 ## Impact of iteration and refinement Lifecycle
 
 1. identifies Usabilty problems
@@ -22,3 +25,14 @@
 3. helps redefine the problem
 4. reduces dependence on assumptions
 5. Improves Usabilty
+
+## Research methods during discovery stage
+
+1. User iterviews
+2. Observation
+3. Surveys Questionnaires
+4. Competitor analysis
+
+## Competitor analysis
+
+strenghts → weaknesses → expectations gaps → feature priorities → opportunites

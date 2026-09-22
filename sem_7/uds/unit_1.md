@@ -8,6 +8,7 @@
 2. ease of use → google docs ez
 3. ergonomics → reducing congnitive strain
 4. asthetics → visual appeal (docs is clean af)
+5. satisfaction
 
 ## Principles of UCD
 
